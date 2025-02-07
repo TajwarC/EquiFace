@@ -1,3 +1,13 @@
+from deepface import DeepFace
+import os
+from os import path
+import itertools
+from itertools import combinations
+import matplotlib.pyplot as plt
+import cv2
+import numpy as np
+import json
+
 main_dir = "images"
 subfolders = sorted([f for f in os.listdir(main_dir) if os.path.isdir(os.path.join(main_dir, f))])
 
