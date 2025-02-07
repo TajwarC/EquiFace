@@ -8,6 +8,7 @@ import numpy as np
 import json
 
 ## Loops over subfolders inside main_dir, with each subfolder containing images of an individual
+## implement logging and parallelism 
 
 main_dir = "images"
 
