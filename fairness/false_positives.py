@@ -8,6 +8,9 @@ import cv2
 import numpy as np
 import json
 
+## calculates false positive rate over entire demographic group in image dataset
+## implement logging and parallelism 
+
 main_dir = "images"
 subfolders = sorted([f for f in os.listdir(main_dir) if os.path.isdir(os.path.join(main_dir, f))])
 
