@@ -11,11 +11,11 @@ def verify_pair(args):
     result = DeepFace.verify(
         img1_path=os.path.join(folder_path, img1),
         img2_path=os.path.join(folder_path, img2),
-        enforce_detection=False
+        enforce_detection=False,
     )
     return result['verified']
 
-def FNR(dataset_dir) -> str:
+def FNR(dataset_dir):
     # Initiate results
     results = {}
 
@@ -42,9 +42,9 @@ def FNR(dataset_dir) -> str:
     TP = 0
 
     # Use multiprocessing to speed up the verification
-    num_workers = min(4, cpu_count() // 2) 
+    num_workers = (cpu_count() // 2) - 1
 
-    with Pool(num_workers) as pool, tqdm(total=total_pairs, desc="Verifying input pairs", unit="pair") as pbar:
+    with Pool(num_workers) as pool, tqdm(total=total_pairs, desc="Processing input pairs", unit="pair") as pbar:
         for is_match in pool.imap_unordered(verify_pair, image_pairs_list):
             if is_match:
                 TP += 1
@@ -60,4 +60,6 @@ def FNR(dataset_dir) -> str:
     print(f'Mean FNR across all IDs in group {main_dir}: {mean_FNR:.2%}')
     
     return results
+
+
 
