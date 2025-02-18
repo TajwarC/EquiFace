@@ -56,7 +56,7 @@ def FPR(dataset_dir, percentage=100):
             pbar.update(1)
     
     FP, TN = 0, 0
-    num_workers = max(1, (cpu_count() // 2) - 1)
+    num_workers = (cpu_count() // 2) - 1
     
     with tqdm(total=num_selected, desc="Processing input pairs", unit="pair") as pbar:
         with Pool(processes=num_workers) as pool:
