@@ -15,7 +15,13 @@ def verify_pair(args):
     )
     return result['verified']
 
-def FNR(dataset_dir):
+def FNR(dataset_dir, use_multiprocessing=False, num_cores=None):
+    
+    if use_multiprocessing:
+        if num_cores is None:
+            raise ValueError("You must specify the number of cores you want to use when use_multiprocessing=True")
+        if num_cores < 1 or num_cores > cpu_count():
+            raise ValueError(f"num_cores must be between 1 and {cpu_count()}")
     # Initiate results
     results = {}
 
@@ -42,15 +48,27 @@ def FNR(dataset_dir):
     TP = 0
 
     # Use multiprocessing to speed up the verification
-    num_workers = (cpu_count() // 2) - 1
-
-    with Pool(num_workers) as pool, tqdm(total=total_pairs, desc="Processing input pairs", unit="pair") as pbar:
-        for is_match in pool.imap_unordered(verify_pair, image_pairs_list):
+    if use_multiprocessing:
+        with Pool(num_cores) as pool, tqdm(total=total_pairs, desc="Processing input pairs", unit="pair") as pbar:
+            for is_match in pool.imap_unordered(verify_pair, image_pairs_list):
+                if is_match:
+                    TP += 1
+                else:
+                    FN += 1
+                pbar.update(1)
+    else:
+        for folder_path, img1, img2, in tqdm(image_pairs_list, desc="Processing input pairs", unit="pair"):
+            result = DeepFace.verify(
+                img1_path=os.path.join(folder_path, img1),
+                img2_path=os.path.join(folder_path, img2),
+                enforce_detection=False
+            )
+            is_match = result['verified']
             if is_match:
                 TP += 1
             else:
                 FN += 1
-            pbar.update(1)
+            
 
     # Calculate final FNR
     TPR = TP / (TP + FN) if (TP + FN) > 0 else 0
@@ -60,6 +78,5 @@ def FNR(dataset_dir):
     print(f'Mean FNR across all IDs in group {main_dir}: {mean_FNR:.2%}')
     
     return results
-
 
 
