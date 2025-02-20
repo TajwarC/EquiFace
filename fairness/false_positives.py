@@ -14,8 +14,14 @@ def verify_pair(pair):
                              enforce_detection=False)
     return result["verified"]
 
-def FPR(dataset_dir, percentage=100):
+def FPR(dataset_dir, percentage=100, use_multiprocessing=False, num_cores=None):
     """ Calculates the False Positive rate for a DeepFace model"""
+    if use_multiprocessing:
+        if num_cores is None:
+            raise ValueError("You must specify the number of cores you want to use when use_multiprocessing=True")
+        if num_cores < 1 or num_cores > cpu_count():
+            raise ValueError(f"num_cores must be between 1 and {cpu_count()}")
+        
     subfolders = sorted([f for f in os.listdir(dataset_dir) if os.path.isdir(os.path.join(dataset_dir, f))])
     # Count images in each subfolder
     image_counts = {
@@ -45,30 +51,40 @@ def FPR(dataset_dir, percentage=100):
     
     print(f"Selected {num_selected} pairs for evaluation ({percentage}% of total)")
     
-    # Progress bar with multiprocessing
-    manager = multiprocessing.Manager()
-    progress = manager.Value("i", 0)
-    lock = manager.Lock()
+    FP = 0
+    TN = 0
     
-    def update_progress(_):
-        with lock:
-            progress.value += 1
-            pbar.update(1)
-    
-    FP, TN = 0, 0
-    num_workers = (cpu_count() // 2) - 1
-    
-    with tqdm(total=num_selected, desc="Processing input pairs", unit="pair") as pbar:
-        with Pool(processes=num_workers) as pool:
-            results = pool.imap_unordered(verify_pair, image_pairs)
-            
-            for result in results:
+    if use_multiprocessing:
+        # Progress bar with multiprocessing
+        manager = multiprocessing.Manager()
+        progress = manager.Value("i", 0)
+        lock = manager.Lock()
+        
+        def update_progress(_):
+            with lock:
+                progress.value += 1
+                pbar.update(1)
+        
+        with tqdm(total=num_selected, desc="Processing input pairs", unit="pair") as pbar:
+            with Pool(processes=num_cores) as pool:
+                results = pool.imap_unordered(verify_pair, image_pairs)
+                
+                for result in results:
+                    if result:
+                        FP += 1
+                    else:
+                        TN += 1
+                    update_progress(result)
+    else:
+         with tqdm(total=num_selected, desc="Processing input pairs", unit="pair") as pbar:
+            for pair in image_pairs:
+                result = verify_pair(pair)
                 if result:
                     FP += 1
                 else:
                     TN += 1
-                update_progress(result)
-    
+                pbar.update(1)
+        
     # Calculate metrics
     FPR = FP / num_selected if num_selected > 0 else 0
     TNR = TN / num_selected if num_selected > 0 else 0
