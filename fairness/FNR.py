@@ -75,8 +75,7 @@ def FNR(dataset_dir, use_multiprocessing=False, num_cores=None):
     mean_FNR = 1 - TPR
     results["mean_FNR"] = mean_FNR
 
-    print(f'Mean FNR across all IDs in group {main_dir}: {mean_FNR:.2%}')
+    print(f'False Negatives: {FN}')
+    print(f'Mean FNR across all IDs in group {main_dir}: {mean_FNR:.4%}')
     
-    return results
-
 
