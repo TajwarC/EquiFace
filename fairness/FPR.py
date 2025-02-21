@@ -92,5 +92,4 @@ def FPR(dataset_dir, percentage=100, use_multiprocessing=False, num_cores=None):
     # Print results
     print(f"False Positives: {FP}")
     print(f"True Negatives: {TN}")
-    print(f"False Positive Rate (FPR): {FPR:.2f}")
-    print(f"True Negative Rate (TNR): {TNR:.2f}")
+    print(f'Mean FPR across all IDs in group {dataset_dir}: {FPR:.4%}')
