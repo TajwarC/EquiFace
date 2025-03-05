@@ -6,6 +6,7 @@ import yaml
 from tqdm import tqdm
 from multiprocessing import Pool, cpu_count
 import tensorflow.lite as tflite
+from ultralytics import YOLO
 import numpy as np
 import cv2
 from scipy.spatial.distance import cosine
@@ -37,15 +38,25 @@ def log_results(dataset_dir, model_path, metric, value, total_pairs, num_selecte
             except yaml.YAMLError:
                 pass
 
-def preprocess_image(image_path, target_size=(160, 160)):
-    """Loads and preprocesses an image for model inference."""
-    image = cv2.imread(image_path)
-    if image is None:
-        return None
-    image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
-    image = cv2.resize(image, target_size)
-    image = np.expand_dims(image, axis=0).astype(np.float32) / 255.0
-    return image
+def preprocess_image(image_path):
+    model = YOLO("yolo11n.pt")
+    # Run inference
+    results = model(image_path)
+    # Process results
+    for result in results:
+        boxes = result.boxes  # Boxes object for bounding box outputs
+        clss = result.boxes.cls  # Class indices of detected object
+    for cls in clss:
+        if model.names[int(cls)] == 'person':
+            image = cv2.imread(image_path)
+            if image is None:
+                return None
+            image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
+            image = cv2.resize(image, (160,160))
+            image = np.expand_dims(image, axis=0).astype(np.float32) / 255.0
+            return image
+        if model.names[int(cls)] != 'person':
+            return None 
 
 def get_embedding(interpreter, image):
     """Generates embeddings from a TFLite model."""
