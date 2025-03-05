@@ -37,6 +37,10 @@ def log_results(dataset_dir, model_path, metric, value, total_pairs, num_selecte
                 logs = yaml.safe_load(file) or []
             except yaml.YAMLError:
                 pass
+                
+    logs.append(log_entry)
+    with open(LOG_FILE, "w") as file:
+        yaml.safe_dump(logs, file, default_flow_style=False)
 
 def preprocess_image(image_path):
     model = YOLO("yolo11n.pt")
