@@ -1,0 +1,112 @@
+- False Negatives: 544
+  dataset: synthpar\ST1
+  metric: FNR
+  model_name: OpenFace
+  num_selected: 1050
+  total_pairs: 1050
+  value: 0.5181
+- False Positives: 310
+  dataset: synthpar\ST1
+  metric: FPR
+  model_name: OpenFace
+  num_selected: 2173
+  total_pairs: 86940
+  value: 0.1427
+- False Negatives: 751
+  dataset: synthpar\ST2
+  metric: FNR
+  model_name: OpenFace
+  num_selected: 1035
+  total_pairs: 1050
+  value: 0.7256
+- False Positives: 97
+  dataset: synthpar\ST2
+  metric: FPR
+  model_name: OpenFace
+  num_selected: 2116
+  total_pairs: 86940
+  value: 0.0458
+- False Negatives: 669
+  dataset: synthpar\ST3
+  metric: FNR
+  model_name: OpenFace
+  num_selected: 1050
+  total_pairs: 1050
+  value: 0.6371
+- False Positives: 227
+  dataset: synthpar\ST3
+  metric: FPR
+  model_name: OpenFace
+  num_selected: 2173
+  total_pairs: 86940
+  value: 0.1045
+- False Negatives: 601
+  dataset: synthpar\ST4
+  metric: FNR
+  model_name: OpenFace
+  num_selected: 1050
+  total_pairs: 1050
+  value: 0.5724
+- False Positives: 286
+  dataset: synthpar\ST4
+  metric: FPR
+  model_name: OpenFace
+  num_selected: 2173
+  total_pairs: 86940
+  value: 0.1316
+- False Negatives: 746
+  dataset: synthpar\ST5
+  metric: FNR
+  model_name: OpenFace
+  num_selected: 1035
+  total_pairs: 1050
+  value: 0.7208
+- False Positives: 108
+  dataset: synthpar\ST5
+  metric: FPR
+  model_name: OpenFace
+  num_selected: 2123
+  total_pairs: 86940
+  value: 0.0509
+- False Negatives: 749
+  dataset: synthpar\ST6
+  metric: FNR
+  model_name: OpenFace
+  num_selected: 1050
+  total_pairs: 1050
+  value: 0.7133
+- False Positives: 112
+  dataset: synthpar\ST6
+  metric: FPR
+  model_name: OpenFace
+  num_selected: 2173
+  total_pairs: 86940
+  value: 0.0515
+- False Negatives: 564
+  dataset: synthpar\ST7
+  metric: FNR
+  model_name: OpenFace
+  num_selected: 1050
+  total_pairs: 1050
+  value: 0.5371
+- False Positives: 363
+  dataset: synthpar\ST7
+  metric: FPR
+  model_name: OpenFace
+  num_selected: 2173
+  total_pairs: 86940
+  value: 0.1671
+- False Negatives: 690
+  dataset: synthpar\ST8
+  metric: FNR
+  model_name: OpenFace
+  num_selected: 1050
+  total_pairs: 1050
+  value: 0.6571
+- False Positives: 149
+  dataset: synthpar\ST8
+  metric: FPR
+  model_name: OpenFace
+  num_selected: 2173
+  total_pairs: 86940
+  value: 0.0686

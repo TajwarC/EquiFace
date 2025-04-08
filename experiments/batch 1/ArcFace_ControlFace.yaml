@@ -1,0 +1,56 @@
+- False Negatives: 67
+  dataset: controlface10k\African
+  metric: FNR
+  model_name: ArcFace
+  num_selected: 1251
+  total_pairs: 2502
+  value: 0.0536
+- False Positives: 699
+  dataset: controlface10k\African
+  metric: FPR
+  model_name: ArcFace
+  num_selected: 1563
+  total_pairs: 3126249
+  value: 0.4472
+- False Negatives: 13
+  dataset: controlface10k\Asian
+  metric: FNR
+  model_name: ArcFace
+  num_selected: 1251
+  total_pairs: 2502
+  value: 0.0104
+- False Positives: 437
+  dataset: controlface10k\Asian
+  metric: FPR
+  model_name: ArcFace
+  num_selected: 1563
+  total_pairs: 3126249
+  value: 0.2796
+- False Negatives: 83
+  dataset: controlface10k\Caucasian
+  metric: FNR
+  model_name: ArcFace
+  num_selected: 1251
+  total_pairs: 2502
+  value: 0.0663
+- False Positives: 447
+  dataset: controlface10k\Caucasian
+  metric: FPR
+  model_name: ArcFace
+  num_selected: 1563
+  total_pairs: 3126249
+  value: 0.286
+- False Negatives: 1
+  dataset: controlface10k\Indian
+  metric: FNR
+  model_name: ArcFace
+  num_selected: 1251
+  total_pairs: 2502
+  value: 0.0008
+- False Positives: 865
+  dataset: controlface10k\Indian
+  metric: FPR
+  model_name: ArcFace
+  num_selected: 1563
+  total_pairs: 3126249
+  value: 0.5534

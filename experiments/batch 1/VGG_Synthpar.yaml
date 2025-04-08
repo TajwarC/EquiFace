@@ -1,0 +1,112 @@
+- False Negatives: 535
+  dataset: synthpar\ST1
+  metric: FNR
+  model_name: VGG-Face
+  num_selected: 1050
+  total_pairs: 1050
+  value: 0.5095
+- False Positives: 215
+  dataset: synthpar\ST1
+  metric: FPR
+  model_name: VGG-Face
+  num_selected: 2173
+  total_pairs: 86940
+  value: 0.0989
+- False Negatives: 451
+  dataset: synthpar\ST2
+  metric: FNR
+  model_name: VGG-Face
+  num_selected: 1035
+  total_pairs: 1050
+  value: 0.4357
+- False Positives: 221
+  dataset: synthpar\ST2
+  metric: FPR
+  model_name: VGG-Face
+  num_selected: 2120
+  total_pairs: 86940
+  value: 0.1042
+- False Negatives: 470
+  dataset: synthpar\ST3
+  metric: FNR
+  model_name: VGG-Face
+  num_selected: 1050
+  total_pairs: 1050
+  value: 0.4476
+- False Positives: 255
+  dataset: synthpar\ST3
+  metric: FPR
+  model_name: VGG-Face
+  num_selected: 2173
+  total_pairs: 86940
+  value: 0.1173
+- False Negatives: 501
+  dataset: synthpar\ST4
+  metric: FNR
+  model_name: VGG-Face
+  num_selected: 1050
+  total_pairs: 1050
+  value: 0.4771
+- False Positives: 223
+  dataset: synthpar\ST4
+  metric: FPR
+  model_name: VGG-Face
+  num_selected: 2173
+  total_pairs: 86940
+  value: 0.1026
+- False Negatives: 509
+  dataset: synthpar\ST5
+  metric: FNR
+  model_name: VGG-Face
+  num_selected: 1035
+  total_pairs: 1050
+  value: 0.4918
+- False Positives: 156
+  dataset: synthpar\ST5
+  metric: FPR
+  model_name: VGG-Face
+  num_selected: 2117
+  total_pairs: 86940
+  value: 0.0737
+- False Negatives: 418
+  dataset: synthpar\ST6
+  metric: FNR
+  model_name: VGG-Face
+  num_selected: 1050
+  total_pairs: 1050
+  value: 0.3981
+- False Positives: 211
+  dataset: synthpar\ST6
+  metric: FPR
+  model_name: VGG-Face
+  num_selected: 2173
+  total_pairs: 86940
+  value: 0.0971
+- False Negatives: 455
+  dataset: synthpar\ST7
+  metric: FNR
+  model_name: VGG-Face
+  num_selected: 1050
+  total_pairs: 1050
+  value: 0.4333
+- False Positives: 239
+  dataset: synthpar\ST7
+  metric: FPR
+  model_name: VGG-Face
+  num_selected: 2173
+  total_pairs: 86940
+  value: 0.11
+- False Negatives: 455
+  dataset: synthpar\ST8
+  metric: FNR
+  model_name: VGG-Face
+  num_selected: 1050
+  total_pairs: 1050
+  value: 0.4333
+- False Positives: 156
+  dataset: synthpar\ST8
+  metric: FPR
+  model_name: VGG-Face
+  num_selected: 2173
+  total_pairs: 86940
+  value: 0.0718

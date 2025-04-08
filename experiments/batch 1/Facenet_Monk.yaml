@@ -1,0 +1,140 @@
+- False Negatives: 27
+  dataset: monk\ST1
+  metric: FNR
+  model_name: model.tflite
+  num_selected: 132
+  total_pairs: 132
+  value: 0.2045
+- False Positives: 25
+  dataset: monk\ST1
+  metric: FPR
+  model_name: model.tflite
+  num_selected: 144
+  total_pairs: 144
+  value: 0.1736
+- False Negatives: 5
+  dataset: monk\ST10
+  metric: FNR
+  model_name: model.tflite
+  num_selected: 66
+  total_pairs: 66
+  value: 0.0758
+- False Positives: 0
+  dataset: monk\ST10
+  metric: FPR
+  model_name: model.tflite
+  num_selected: 0
+  total_pairs: 0
+  value: 0.0
+- False Negatives: 7
+  dataset: monk\ST2
+  metric: FNR
+  model_name: model.tflite
+  num_selected: 187
+  total_pairs: 198
+  value: 0.0374
+- False Positives: 286
+  dataset: monk\ST2
+  metric: FPR
+  model_name: model.tflite
+  num_selected: 408
+  total_pairs: 432
+  value: 0.701
+- False Negatives: 13
+  dataset: monk\ST3
+  metric: FNR
+  model_name: model.tflite
+  num_selected: 132
+  total_pairs: 132
+  value: 0.0985
+- False Positives: 108
+  dataset: monk\ST3
+  metric: FPR
+  model_name: model.tflite
+  num_selected: 144
+  total_pairs: 144
+  value: 0.75
+- False Negatives: 34
+  dataset: monk\ST4
+  metric: FNR
+  model_name: model.tflite
+  num_selected: 132
+  total_pairs: 132
+  value: 0.2576
+- False Positives: 66
+  dataset: monk\ST4
+  metric: FPR
+  model_name: model.tflite
+  num_selected: 144
+  total_pairs: 144
+  value: 0.4583
+- False Negatives: 41
+  dataset: monk\ST5
+  metric: FNR
+  model_name: model.tflite
+  num_selected: 132
+  total_pairs: 132
+  value: 0.3106
+- False Positives: 31
+  dataset: monk\ST5
+  metric: FPR
+  model_name: model.tflite
+  num_selected: 144
+  total_pairs: 144
+  value: 0.2153
+- False Negatives: 33
+  dataset: monk\ST6
+  metric: FNR
+  model_name: model.tflite
+  num_selected: 132
+  total_pairs: 132
+  value: 0.25
+- False Positives: 32
+  dataset: monk\ST6
+  metric: FPR
+  model_name: model.tflite
+  num_selected: 144
+  total_pairs: 144
+  value: 0.2222
+- False Negatives: 35
+  dataset: monk\ST7
+  metric: FNR
+  model_name: model.tflite
+  num_selected: 66
+  total_pairs: 66
+  value: 0.5303
+- False Positives: 0
+  dataset: monk\ST7
+  metric: FPR
+  model_name: model.tflite
+  num_selected: 0
+  total_pairs: 0
+  value: 0.0
+- False Negatives: 40
+  dataset: monk\ST8
+  metric: FNR
+  model_name: model.tflite
+  num_selected: 132
+  total_pairs: 132
+  value: 0.303
+- False Positives: 70
+  dataset: monk\ST8
+  metric: FPR
+  model_name: model.tflite
+  num_selected: 144
+  total_pairs: 144
+  value: 0.4861
+- False Negatives: 9
+  dataset: monk\ST9
+  metric: FNR
+  model_name: model.tflite
+  num_selected: 132
+  total_pairs: 132
+  value: 0.0682
+- False Positives: 58
+  dataset: monk\ST9
+  metric: FPR
+  model_name: model.tflite
+  num_selected: 144
+  total_pairs: 144
+  value: 0.4028

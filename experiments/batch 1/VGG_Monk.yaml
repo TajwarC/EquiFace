@@ -1,0 +1,140 @@
+- False Negatives: 7
+  dataset: monk\ST1
+  metric: FNR
+  model_name: VGG-Face
+  num_selected: 132
+  total_pairs: 132
+  value: 0.053
+- False Positives: 0
+  dataset: monk\ST1
+  metric: FPR
+  model_name: VGG-Face
+  num_selected: 144
+  total_pairs: 144
+  value: 0.0
+- False Negatives: 2
+  dataset: monk\ST10
+  metric: FNR
+  model_name: VGG-Face
+  num_selected: 66
+  total_pairs: 66
+  value: 0.0303
+- False Positives: 0
+  dataset: monk\ST10
+  metric: FPR
+  model_name: VGG-Face
+  num_selected: 0
+  total_pairs: 0
+  value: 0
+- False Negatives: 10
+  dataset: monk\ST2
+  metric: FNR
+  model_name: VGG-Face
+  num_selected: 198
+  total_pairs: 198
+  value: 0.0505
+- False Positives: 40
+  dataset: monk\ST2
+  metric: FPR
+  model_name: VGG-Face
+  num_selected: 432
+  total_pairs: 432
+  value: 0.0926
+- False Negatives: 29
+  dataset: monk\ST3
+  metric: FNR
+  model_name: VGG-Face
+  num_selected: 132
+  total_pairs: 132
+  value: 0.2197
+- False Positives: 16
+  dataset: monk\ST3
+  metric: FPR
+  model_name: VGG-Face
+  num_selected: 144
+  total_pairs: 144
+  value: 0.1111
+- False Negatives: 14
+  dataset: monk\ST4
+  metric: FNR
+  model_name: VGG-Face
+  num_selected: 132
+  total_pairs: 132
+  value: 0.1061
+- False Positives: 0
+  dataset: monk\ST4
+  metric: FPR
+  model_name: VGG-Face
+  num_selected: 144
+  total_pairs: 144
+  value: 0.0
+- False Negatives: 0
+  dataset: monk\ST5
+  metric: FNR
+  model_name: VGG-Face
+  num_selected: 132
+  total_pairs: 132
+  value: 0.0
+- False Positives: 27
+  dataset: monk\ST5
+  metric: FPR
+  model_name: VGG-Face
+  num_selected: 144
+  total_pairs: 144
+  value: 0.1875
+- False Negatives: 5
+  dataset: monk\ST6
+  metric: FNR
+  model_name: VGG-Face
+  num_selected: 132
+  total_pairs: 132
+  value: 0.0379
+- False Positives: 0
+  dataset: monk\ST6
+  metric: FPR
+  model_name: VGG-Face
+  num_selected: 144
+  total_pairs: 144
+  value: 0.0
+- False Negatives: 0
+  dataset: monk\ST7
+  metric: FNR
+  model_name: VGG-Face
+  num_selected: 66
+  total_pairs: 66
+  value: 0.0
+- False Positives: 0
+  dataset: monk\ST7
+  metric: FPR
+  model_name: VGG-Face
+  num_selected: 0
+  total_pairs: 0
+  value: 0
+- False Negatives: 11
+  dataset: monk\ST8
+  metric: FNR
+  model_name: VGG-Face
+  num_selected: 132
+  total_pairs: 132
+  value: 0.0833
+- False Positives: 60
+  dataset: monk\ST8
+  metric: FPR
+  model_name: VGG-Face
+  num_selected: 144
+  total_pairs: 144
+  value: 0.4167
+- False Negatives: 17
+  dataset: monk\ST9
+  metric: FNR
+  model_name: VGG-Face
+  num_selected: 132
+  total_pairs: 132
+  value: 0.1288
+- False Positives: 54
+  dataset: monk\ST9
+  metric: FPR
+  model_name: VGG-Face
+  num_selected: 144
+  total_pairs: 144
+  value: 0.375

@@ -1,0 +1,119 @@
+- False Negatives: 609
+  dataset: synthpar\ST1
+  metric: FNR
+  model_name: model.tflite
+  num_selected: 1021
+  total_pairs: 1050
+  value: 0.5965
+- False Negatives: 609
+  dataset: synthpar\ST1
+  metric: FNR
+  model_name: model.tflite
+  num_selected: 1021
+  total_pairs: 1050
+  value: 0.5965
+- False Positives: 53
+  dataset: synthpar\ST1
+  metric: FPR
+  model_name: model.tflite
+  num_selected: 2084
+  total_pairs: 86940
+  value: 0.0254
+- False Negatives: 332
+  dataset: synthpar\ST2
+  metric: FNR
+  model_name: model.tflite
+  num_selected: 630
+  total_pairs: 1050
+  value: 0.527
+- False Positives: 11
+  dataset: synthpar\ST2
+  metric: FPR
+  model_name: model.tflite
+  num_selected: 1002
+  total_pairs: 86940
+  value: 0.011
+- False Negatives: 588
+  dataset: synthpar\ST3
+  metric: FNR
+  model_name: model.tflite
+  num_selected: 978
+  total_pairs: 1050
+  value: 0.6012
+- False Positives: 36
+  dataset: synthpar\ST3
+  metric: FPR
+  model_name: model.tflite
+  num_selected: 1971
+  total_pairs: 86940
+  value: 0.0183
+- False Negatives: 477
+  dataset: synthpar\ST4
+  metric: FNR
+  model_name: model.tflite
+  num_selected: 819
+  total_pairs: 1050
+  value: 0.5824
+- False Positives: 36
+  dataset: synthpar\ST4
+  metric: FPR
+  model_name: model.tflite
+  num_selected: 1576
+  total_pairs: 86940
+  value: 0.0228
+- False Negatives: 533
+  dataset: synthpar\ST5
+  metric: FNR
+  model_name: model.tflite
+  num_selected: 936
+  total_pairs: 1050
+  value: 0.5694
+- False Positives: 44
+  dataset: synthpar\ST5
+  metric: FPR
+  model_name: model.tflite
+  num_selected: 1852
+  total_pairs: 86940
+  value: 0.0238
+- False Negatives: 531
+  dataset: synthpar\ST6
+  metric: FNR
+  model_name: model.tflite
+  num_selected: 972
+  total_pairs: 1050
+  value: 0.5463
+- False Positives: 31
+  dataset: synthpar\ST6
+  metric: FPR
+  model_name: model.tflite
+  num_selected: 1992
+  total_pairs: 86940
+  value: 0.0156
+- False Negatives: 449
+  dataset: synthpar\ST7
+  metric: FNR
+  model_name: model.tflite
+  num_selected: 733
+  total_pairs: 1050
+  value: 0.6126
+- False Positives: 34
+  dataset: synthpar\ST7
+  metric: FPR
+  model_name: model.tflite
+  num_selected: 1336
+  total_pairs: 86940
+  value: 0.0254
+- False Negatives: 352
+  dataset: synthpar\ST8
+  metric: FNR
+  model_name: model.tflite
+  num_selected: 665
+  total_pairs: 1050
+  value: 0.5293
+- False Positives: 16
+  dataset: synthpar\ST8
+  metric: FPR
+  model_name: model.tflite
+  num_selected: 1175
+  total_pairs: 86940
+  value: 0.0136

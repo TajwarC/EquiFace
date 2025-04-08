@@ -1,0 +1,112 @@
+- False Negatives: 208
+  dataset: synthpar\ST1
+  metric: FNR
+  model_name: SFace
+  num_selected: 1050
+  total_pairs: 1050
+  value: 0.1981
+- False Positives: 538
+  dataset: synthpar\ST1
+  metric: FPR
+  model_name: SFace
+  num_selected: 2173
+  total_pairs: 86940
+  value: 0.2476
+- False Negatives: 246
+  dataset: synthpar\ST2
+  metric: FNR
+  model_name: SFace
+  num_selected: 1035
+  total_pairs: 1050
+  value: 0.2377
+- False Positives: 233
+  dataset: synthpar\ST2
+  metric: FPR
+  model_name: SFace
+  num_selected: 2108
+  total_pairs: 86940
+  value: 0.1105
+- False Negatives: 215
+  dataset: synthpar\ST3
+  metric: FNR
+  model_name: SFace
+  num_selected: 1050
+  total_pairs: 1050
+  value: 0.2048
+- False Positives: 323
+  dataset: synthpar\ST3
+  metric: FPR
+  model_name: SFace
+  num_selected: 2173
+  total_pairs: 86940
+  value: 0.1486
+- False Negatives: 188
+  dataset: synthpar\ST4
+  metric: FNR
+  model_name: SFace
+  num_selected: 1050
+  total_pairs: 1050
+  value: 0.179
+- False Positives: 464
+  dataset: synthpar\ST4
+  metric: FPR
+  model_name: SFace
+  num_selected: 2173
+  total_pairs: 86940
+  value: 0.2135
+- False Negatives: 289
+  dataset: synthpar\ST5
+  metric: FNR
+  model_name: SFace
+  num_selected: 1035
+  total_pairs: 1050
+  value: 0.2792
+- False Positives: 243
+  dataset: synthpar\ST5
+  metric: FPR
+  model_name: SFace
+  num_selected: 2111
+  total_pairs: 86940
+  value: 0.1151
+- False Negatives: 252
+  dataset: synthpar\ST6
+  metric: FNR
+  model_name: SFace
+  num_selected: 1050
+  total_pairs: 1050
+  value: 0.24
+- False Positives: 222
+  dataset: synthpar\ST6
+  metric: FPR
+  model_name: SFace
+  num_selected: 2173
+  total_pairs: 86940
+  value: 0.1022
+- False Negatives: 240
+  dataset: synthpar\ST7
+  metric: FNR
+  model_name: SFace
+  num_selected: 1050
+  total_pairs: 1050
+  value: 0.2286
+- False Positives: 457
+  dataset: synthpar\ST7
+  metric: FPR
+  model_name: SFace
+  num_selected: 2173
+  total_pairs: 86940
+  value: 0.2103
+- False Negatives: 221
+  dataset: synthpar\ST8
+  metric: FNR
+  model_name: SFace
+  num_selected: 1050
+  total_pairs: 1050
+  value: 0.2105
+- False Positives: 258
+  dataset: synthpar\ST8
+  metric: FPR
+  model_name: SFace
+  num_selected: 2173
+  total_pairs: 86940
+  value: 0.1187

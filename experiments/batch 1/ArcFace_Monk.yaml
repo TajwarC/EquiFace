@@ -1,0 +1,140 @@
+- False Negatives: 0
+  dataset: monk\ST1
+  metric: FNR
+  model_name: ArcFace
+  num_selected: 132
+  total_pairs: 132
+  value: 0.0
+- False Positives: 13
+  dataset: monk\ST1
+  metric: FPR
+  model_name: ArcFace
+  num_selected: 144
+  total_pairs: 144
+  value: 0.0903
+- False Negatives: 0
+  dataset: monk\ST10
+  metric: FNR
+  model_name: ArcFace
+  num_selected: 66
+  total_pairs: 66
+  value: 0.0
+- False Positives: 0
+  dataset: monk\ST10
+  metric: FPR
+  model_name: ArcFace
+  num_selected: 0
+  total_pairs: 0
+  value: 0
+- False Negatives: 2
+  dataset: monk\ST2
+  metric: FNR
+  model_name: ArcFace
+  num_selected: 198
+  total_pairs: 198
+  value: 0.0101
+- False Positives: 31
+  dataset: monk\ST2
+  metric: FPR
+  model_name: ArcFace
+  num_selected: 432
+  total_pairs: 432
+  value: 0.0718
+- False Negatives: 1
+  dataset: monk\ST3
+  metric: FNR
+  model_name: ArcFace
+  num_selected: 132
+  total_pairs: 132
+  value: 0.0076
+- False Positives: 10
+  dataset: monk\ST3
+  metric: FPR
+  model_name: ArcFace
+  num_selected: 144
+  total_pairs: 144
+  value: 0.0694
+- False Negatives: 1
+  dataset: monk\ST4
+  metric: FNR
+  model_name: ArcFace
+  num_selected: 132
+  total_pairs: 132
+  value: 0.0076
+- False Positives: 3
+  dataset: monk\ST4
+  metric: FPR
+  model_name: ArcFace
+  num_selected: 144
+  total_pairs: 144
+  value: 0.0208
+- False Negatives: 2
+  dataset: monk\ST5
+  metric: FNR
+  model_name: ArcFace
+  num_selected: 132
+  total_pairs: 132
+  value: 0.0152
+- False Positives: 8
+  dataset: monk\ST5
+  metric: FPR
+  model_name: ArcFace
+  num_selected: 144
+  total_pairs: 144
+  value: 0.0556
+- False Negatives: 3
+  dataset: monk\ST6
+  metric: FNR
+  model_name: ArcFace
+  num_selected: 132
+  total_pairs: 132
+  value: 0.0227
+- False Positives: 1
+  dataset: monk\ST6
+  metric: FPR
+  model_name: ArcFace
+  num_selected: 144
+  total_pairs: 144
+  value: 0.0069
+- False Negatives: 0
+  dataset: monk\ST7
+  metric: FNR
+  model_name: ArcFace
+  num_selected: 66
+  total_pairs: 66
+  value: 0.0
+- False Positives: 0
+  dataset: monk\ST7
+  metric: FPR
+  model_name: ArcFace
+  num_selected: 0
+  total_pairs: 0
+  value: 0
+- False Negatives: 12
+  dataset: monk\ST8
+  metric: FNR
+  model_name: ArcFace
+  num_selected: 132
+  total_pairs: 132
+  value: 0.0909
+- False Positives: 77
+  dataset: monk\ST8
+  metric: FPR
+  model_name: ArcFace
+  num_selected: 144
+  total_pairs: 144
+  value: 0.5347
+- False Negatives: 9
+  dataset: monk\ST9
+  metric: FNR
+  model_name: ArcFace
+  num_selected: 132
+  total_pairs: 132
+  value: 0.0682
+- False Positives: 87
+  dataset: monk\ST9
+  metric: FPR
+  model_name: ArcFace
+  num_selected: 144
+  total_pairs: 144
+  value: 0.6042
